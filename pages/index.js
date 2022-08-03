@@ -14,37 +14,26 @@ export default function Home() {
       <Head>
         <title>Art School Africa - Coming Soon</title>
         <link rel="icon" href="/favicon.ico" />
-        {/* <!-- Fonts --> */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&family=Work+Sans:wght@300;400&display=swap"
-          rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
-        {/* <!-- Stylesheets --> */}
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
       </Head>
 
       <main>
-        <Header title="Art School Africa" />
-        <div id="landing-section" class="section title-section">
-          <div class="title-heading">
+        <div id="landing-section" className="section title-section">
+          <div className="title-heading">
             <h1>
               Your Journey Into The Arts Starts Here
             </h1>
           </div>
-          <div class="title-actions">
-            <a href="#stay-utd-section"><button class="btn CTA">
-                <p class="title-text">Join Now</p>
+          <div className="title-actions">
+            <a href="#stay-utd-section"><button className="btn CTA">
+                <p className="title-text">Join Now</p>
               </button></a>
-            <p class="title-text"><a class="light" href="#our-mission-section">Learn More</a></p>
+            <p className="title-text"><a className="light" href="#our-mission-section">Learn More</a></p>
           </div>
         </div>
 
         {/* <!-- Our Story Section --> */}
-        <div id="our-mission-section" class="section">
-          <div class="container our-mission-block">
+        <div id="our-mission-section" className="section">
+          <div className="container our-mission-block">
             <h1>Our Mission</h1>
             <hr>
             </hr>
@@ -56,36 +45,36 @@ export default function Home() {
         </div>
 
         {/* <!-- Quote Section ***needs to include a grid to include the vertical line--> */}
-        <div id="quote-section" class='section quote-section grid'>
-          <div class="grid-child vl">
+        <div id="quote-section" className='section quote-section grid'>
+          <div className="grid-child vl">
           </div>
-          <div class="grid-child quote-heading">
+          <div className="grid-child quote-heading">
             <h1>We're passionate about helping you grow and make an impact.</h1>
           </div>
         </div>
 
         {/* <!-- Survey Section --> */}
-        <div id="survey-section" class="section survey-section">
-          <div class="flex flex-col flex-gap-bg">
-            <div class="survey-intro">
+        <div id="survey-section" className="section survey-section">
+          <div className="flex flex-col flex-gap-bg">
+            <div className="survey-intro">
               <h1>Join us on our journey.</h1>
               <h1>Fill out a short survey.</h1>
             </div>
-            <div class="flex flex-col survey-links">
-              <h2>I'm A <a class="dark slide-underline" href="https://4chocppu9yw.typeform.com/to/vv7aGd0P"
+            <div className="flex flex-col survey-links">
+              <h2>I'm A <a className="dark slide-underline" href="https://4chocppu9yw.typeform.com/to/vv7aGd0P"
                   target="_blank">Student</a></h2>
-              <h2>I'm An <a class="dark slide-underline" href="https://4chocppu9yw.typeform.com/to/xoZgOaw0"
+              <h2>I'm An <a className="dark slide-underline" href="https://4chocppu9yw.typeform.com/to/xoZgOaw0"
                   target="_blank">Art Professional</a></h2>
             </div>
           </div>
         </div>
 
         {/* <!-- Sneak Peek Section --> */}
-        <div id="three-pillars-section" class="section flex flex-col flex-gap-bg">
+        <div id="three-pillars-section" className="section flex flex-col flex-gap-bg">
           <h1>What We Do</h1>
-          <div class='flex flex-wrap three-pillars'>
-            <div class='card'>
-              <div class="img-container">
+          <div className='flex flex-wrap three-pillars'>
+            <div className='card'>
+              <div className="img-container">
                 <Image src={tp_1} alt="" />
               </div>
               <div>
@@ -96,8 +85,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div class='card'>
-              <div class="img-container">
+            <div className='card'>
+              <div className="img-container">
                 <Image src={tp_2} alt="" />
               </div>
               <div>
@@ -108,8 +97,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div class='card'>
-              <div class="img-container">
+            <div className='card'>
+              <div className="img-container">
                 <Image src={tp_3} alt="" />
               </div>
               <div>
@@ -124,21 +113,19 @@ export default function Home() {
         </div>
 
         {/* <!-- Stay Up-to-date Section  STILL NEED TO IMPLEMENT THIS -> PHP CODE TO ADD INPUT TO A TEXTFILE ON FTP SERVER --> */}
-        <div id="stay-utd-section" class="flex section stay-utd-section">
+        <div id="stay-utd-section" className="flex section stay-utd-section">
           <div>
             <h1>Stay up to date.</h1>
             <hr>
             </hr>
-            <form id="mailing-list-form" class="flex">
-              <input type="email" class="form-control" id="exampleFormControlInput1"
+            <form id="mailing-list-form" className="flex">
+              <input type="email" className="form-control" id="exampleFormControlInput1"
                 placeholder="Join our mailing list." name="email"></input>
-              <button id="mailing-list-btn" type="submit" class="btn">&rarr;</button>
+              <button id="mailing-list-btn" type="submit" className="btn">&rarr;</button>
             </form>
           </div>
         </div>
       </main>
-
-      <Footer />
     </>
   )
 }
